@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.michael.deliveryapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ChooseItem"
+            android:label="@string/title_activity_choose_item"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChooseStore" />
+        </activity>
+        <activity
+            android:name=".ChooseStore"
+            android:label="@string/title_activity_choose_store"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name=".TesticlesActivity" -->
+        <!-- android:label="@string/title_activity_testicles" -->
+        <!-- android:theme="@style/AppTheme" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".ChooseStore" -->
+        <!-- android:label="@string/title_activity_choose_store" -->
+        <!-- android:theme="@style/AppTheme" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
